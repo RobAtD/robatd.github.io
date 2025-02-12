@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./img/favicon.png" />
+    <!--Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize browser stylings -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <title>Robert's Pokédex App</title>
+  </head>
+  <body>
+    <!-- Header including the logo and the main navigation -->
+    <header class="page-header">
+      <img
+        src="./img/logo.png"
+        class="page-header__item"
+        alt="A logo image of a dragon head and the text RD Development"
+      />
+      <nav class="page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About me</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item--active"
+              >My work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main content -->
+    <main>
+      <h1>Pokédex App</h1>
+      <p>
+        The Pokédex App is an interactive JavaScript application that lets users
+        explore a wide range of Pokémon. Using the PokéAPI, the Pokédex App
+        dynamically loads Pokémon data in form of a list.
+      </p>
+      <img src="./img/pokedex-app-screenshot.png" class="project-screenshot" />
+      <div class="project-grid">
+        <div class="project-grid__item">
+          <h2>Project Objective</h2>
+          <p>
+            The goal of the Pokédex App is to make Pokémon exploration easy and
+            engaging while demonstrating key JavaScript functionalities. The app
+            allows users to:
+          </p>
+          <ul>
+            <li>Browse a dynamically loaded list of Pokémon</li>
+            <li>
+              View Pokémon details (name, height, and image) in a
+              Bootstrap-powered modal
+            </li>
+            <li>Search for specific Pokémon by name</li>
+            <li>Swipe through Pokémon within the modal</li>
+            <li>
+              Enjoy a responsive design with a smooth navigation bar and a music
+              button for the perfect feeling
+            </li>
+          </ul>
+        </div>
+        <div class="project-grid__item">
+          <h3>Technology Used</h3>
+          <p>
+            To ensure a smooth and efficient user experience, the Pokédex App is
+            built using:
+          </p>
+          <ul>
+            <li>
+              <b>JavaScript (ES6)</b> - Handles API requests, DOM manipulation,
+              and event handling
+            </li>
+            <li><b>HTML5 & CSS3</b> - Provides structure and styling</li>
+            <li>
+              <b>Bootstrap 5.3</b> - Ensures a responsive layout and interactive
+              modals
+            </li>
+            <li><b>PokéAPI</b> - Fetches real-time Pokémon data</li>
+            <li><b>GitHub Pages</b> - Hosts the application</li>
+          </ul>
+        </div>
+        <a
+          class="button"
+          href="https://github.com/RobAtD/pokedex-app"
+          target="_blank"
+          >GitHub Repository</a
+        >
+        <a
+          class="button"
+          href="https://robatd.github.io/pokedex-app/"
+          target="_blank"
+          >Live Website</a
+        >
+      </div>
+    </main>
+    <!-- Footer with links to social media profiles -->
+    <footer class="page-footer">
+      <p>Follow me on</p>
+      <div class="social-media">
+        <img src="./img/github-icon.svg" alt="GitHub" />
+        <img src="./img/instagram-icon.svg" alt="Instagram" />
+        <img src="./img/linkedin-icon.svg" alt="LinkedIn" />
+      </div>
+    </footer>
+    <script src="./js/tota11y.min.js"></script>
+  </body>
+</html>

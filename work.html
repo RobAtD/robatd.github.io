@@ -22,7 +22,7 @@
             type="text/css"
             href="css/style.production.css"
         />
-        <title>Robert's Portfolio</title>
+        <title>Robert's projects</title>
     </head>
     <body>
         <!-- Header including the logo and the main navigation -->
@@ -38,7 +38,7 @@
                         <a
                             href="index.html"
                             role="menuitem"
-                            class="navigation-list__item--active"
+                            class="navigation-list__item"
                             >Home</a
                         >
                     </li>
@@ -54,7 +54,7 @@
                         <a
                             href="work.html"
                             role="menuitem"
-                            class="navigation-list__item"
+                            class="navigation-list__item--active"
                             >My work</a
                         >
                     </li>
@@ -62,27 +62,36 @@
                         <a
                             href="contact.html"
                             role="menuitem"
-                            class="navigation-list__item navigation-list__item"
+                            class="navigation-list__item"
                             >Contact</a
                         >
                     </li>
                 </ul>
             </nav>
         </header>
-        <main class="profile">
-            <!-- Add your profile image here-->
-            <img
-                src="./img/profile-image.jpeg"
-                class="profile__portrait"
-                alt="Image of Robert Ditler"
-            />
-            <h1>Hello World!</h1>
-            <p>
-                My name is Robert Ditler. I am an upcoming
-                <span>web</span> developer from Germany.
-            </p>
-            <a href="work.html">Check out some of my work!</a><br />
+        <!-- Main content -->
+        <main>
+            <h1>My Work</h1>
+            <div class="project-list">
+                <!-- Grid items will live here -->
+                <div class="project-list__item">
+                    <h2>Pokédex App</h2>
+                    <p>A JavaScript application using an API</p>
+                    <a href="./pokedex-app.html">Visit Project</a>
+                </div>
+                <div class="project-list__item">
+                    <h2>myFlix</h2>
+                    <p>A full-stack movie database</p>
+                    <a href="./myflix.html">Visit Project</a>
+                </div>
+                <div class="project-list__item">
+                    <h2>Meet App</h2>
+                    <p>A serverless progressive web app</p>
+                    <a href="./meet-app.html">Visit Project</a>
+                </div>
+            </div>
         </main>
+        <!-- Footer with links to social media profiles -->
         <footer class="page-footer">
             <p>Follow me on</p>
             <div class="social-media">

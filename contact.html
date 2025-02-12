@@ -22,7 +22,7 @@
             type="text/css"
             href="css/style.production.css"
         />
-        <title>Robert's Portfolio</title>
+        <title>Contact Robert</title>
     </head>
     <body>
         <!-- Header including the logo and the main navigation -->
@@ -38,7 +38,7 @@
                         <a
                             href="index.html"
                             role="menuitem"
-                            class="navigation-list__item--active"
+                            class="navigation-list__item"
                             >Home</a
                         >
                     </li>
@@ -62,27 +62,84 @@
                         <a
                             href="contact.html"
                             role="menuitem"
-                            class="navigation-list__item navigation-list__item"
+                            class="navigation-list__item--active"
                             >Contact</a
                         >
                     </li>
                 </ul>
             </nav>
         </header>
-        <main class="profile">
-            <!-- Add your profile image here-->
-            <img
-                src="./img/profile-image.jpeg"
-                class="profile__portrait"
-                alt="Image of Robert Ditler"
-            />
-            <h1>Hello World!</h1>
-            <p>
-                My name is Robert Ditler. I am an upcoming
-                <span>web</span> developer from Germany.
-            </p>
-            <a href="work.html">Check out some of my work!</a><br />
+        <!-- Main content -->
+        <main>
+            <h1>Contact</h1>
+            <div>
+                Robert Ditler<br />
+                Max-Planck-Str. 16<br />
+                70806 Kornwestheim<br />
+                <br />
+                Telephone:
+                <a
+                    href="tel:+4971541599589"
+                    aria-label="Call me at + 4 9 7 1 5 4 1 5 9 9 5 8 9"
+                    >+49 7154 1599 589</a
+                >
+                <br />
+                Mail:
+                <a href="mailto:r.ditler@devduck.de">r.ditler@devduck.de</a
+                ><br />
+                <a href="mailto:r.ditler@devduck.de">Contact me</a>
+            </div>
+            <!-- Contact form -->
+            <h2>Leave me a message</h2>
+            <form action="" method="post" id="contact-form">
+                <div class="input-container">
+                    <label class="standard-label" for="user-name">Name:</label>
+                    <input
+                        type="text"
+                        id="user-name"
+                        placeholder="Your name"
+                        required
+                    />
+                </div>
+                <div class="input-container">
+                    <label class="standard-label" for="user-email"
+                        >Email:</label
+                    >
+                    <input
+                        type="email"
+                        id="user-email"
+                        placeholder="example@email.com"
+                        required
+                    />
+                </div>
+                <div class="input-container">
+                    <label class="standard-label" for="user-phone"
+                        >Phone:</label
+                    >
+                    <input
+                        type="tel"
+                        id="user-phone"
+                        pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                    />
+                </div>
+                <div class="input-container">
+                    <label class="standard-label" for="contact-message"
+                        >Your message:
+                    </label>
+                    <textarea
+                        maxlength="240"
+                        id="contact-message"
+                        required
+                    ></textarea>
+                </div>
+                <input id="robot" name="robot" type="checkbox" required />
+                <label for="robot">I am not a robot</label><br />
+                <div class="input-container">
+                <input type="submit" id="submit-button" value="Send message" />
+                </div>
+            </form>
         </main>
+        <!-- Footer with links to social media profiles -->
         <footer class="page-footer">
             <p>Follow me on</p>
             <div class="social-media">
@@ -92,5 +149,6 @@
             </div>
         </footer>
         <script src="./js/tota11y.min.js"></script>
+        <script src="./js/scripts.js"></script>
     </body>
 </html>
