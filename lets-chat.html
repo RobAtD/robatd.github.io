@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./img/favicon.png" />
+    <!--Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize browser stylings -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <title>Robert's Let's Chat! App</title>
+  </head>
+  <body>
+    <!-- Header including the logo and the main navigation -->
+    <header class="page-header">
+      <img
+        src="./img/logo.png"
+        class="page-header__item"
+        alt="A logo image of a dragon head and the text RD Development"
+      />
+      <nav class="page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About me</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item--active"
+              >My work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main content -->
+    <main>
+      <h1>Let's Chat!</h1>
+      <p>
+        Let's Chat! a mobile chat application built using React Native, Expo,
+        and Firebase. It allows users to send text messages, images and
+        share their location in real-time, with offline support for message
+        storage.
+      </p>
+      <video controls width="300">
+        <source src="./vid/5_5 app recording.webm" type="video/webm"/>
+      </video>
+      <div class="project-grid">
+        <div class="project-grid__item">
+          <h2>Project Objective</h2>
+          <p>
+            The goal of Let's Chat! is to provide a seamless chat experience with the following features:
+          </p>
+          <ul>
+            <li>Anonymous login</li>
+            <li>Real-time messaging</li>
+            <li>Offline message storage</li>
+            <li>
+              Sending images and location sharing
+            </li>
+          </ul>
+        </div>
+        <div class="project-grid__item">
+          <h2>Technology Used</h2>
+          <ul>
+            <li><b>React Native</b> - A framework for cross-plattform mobile development</li>
+            <li>
+              <b>Expo</b> - A platform for making universal native apps
+            </li>
+            <li><b>Firebase Firestor</b> - A Real-time cloud database</li>
+            <li>
+              <b>Gifted Chat</b> - A library for chat UI components
+            </li>
+            <li><b>AsyncStorage</b> - Local storage for offline functionality</li>
+          </ul>
+        </div>
+      </div>
+      <a
+          class="button"
+          href="https://github.com/RobAtD/lets-chat"
+          target="_blank"
+          >GitHub Repository</a
+        >
+    </main>
+    <!-- Footer with links to social media profiles -->
+    <footer class="page-footer">
+      <p>Follow me on</p>
+      <div class="social-media">
+          <a href="https://github.com/RobAtD" target="_blank"><img src="./img/github-icon.svg" alt="GitHub" /></a>
+          <a href="https://www.linkedin.com/in/robert-ditler-8585b31b7/" target="_blank"><img src="./img/linkedin-icon.svg" alt="LinkedIn" /></a>
+      </div>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./img/favicon.png" />
+    <!--Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize browser stylings -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <title>Robert's myFlix App</title>
+  </head>
+  <body>
+    <!-- Header including the logo and the main navigation -->
+    <header class="page-header">
+      <img
+        src="./img/logo.png"
+        class="page-header__item"
+        alt="A logo image of a dragon head and the text RD Development"
+      />
+      <nav class="page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About me</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item--active"
+              >My work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main content -->
+    <main>
+      <h1>myFlix-Angular</h1>
+      <p>
+        myFlix-Angular is a full-stack movie database application designed for
+        movie enthusiasts. It consists of a Angular-based frontend and a RESTful
+        API backend, allowing users to browse, search, and manage their favorite
+        movies. The app provides a seamless experience, enabling users to scroll
+        through a movie list and manage their personal profiles.
+      </p>
+      <img src="./img/myflix-angular.png" class="project-screenshot" />
+      <div class="project-grid">
+        <div class="project-grid__item">
+          <h2>Project Objective</h2>
+          <p>
+            myFlix-Angular is built to provide an engaging and user-friendly platform
+            where movie lovers can:
+          </p>
+          <ul>
+            <li>Browse a curated collection of different movies</li>
+            <li>View detailed information about movies, directors and genres</li>
+            <li>
+              Create an account, manage their profile, and maintain a personal
+              favorites list
+            </li>
+            <li>Enjoy a clean, responsive UI with intuitive navigation</li>
+          </ul>
+        </div>
+        <div class="project-grid__item">
+          <h3>Technology Used</h3>
+          <h4>Client</h4>
+          <ul>
+            <li>
+              <b>Angular</b> - For a dynamic and interactive user experience
+            </li>
+            <li><b>Angular Material</b> - For a responsive and accessible Design</li>
+            <li><b>Typescript</b> - For maintaining the code</li>
+            <li><b>Github Pages</b> - For deploying and hosting the app</li>
+          </ul>
+          <h4>Backend</h4>
+          <p>
+            The client connects to movie API, a RESTful backend that provides
+            real-time movie data and handles user authentication. It is built
+            using:
+          </p>
+          <ul>
+            <li><b>Node.js & Express</b> - For handling API requests</li>
+            <li>
+              <b>MongoDB & Mongoose</b> - For storing and managing movie/user
+              data
+            </li>
+            <li><b>JWT & Passport.js</b> - For secure authentication</li>
+            <li><b>CORS</b> - To enable cross-origin API requests</li>
+            <li><b>MongoDB Atlas</b> - Cloud-based database storage</li>
+            <li><b>Heroku</b> - For backend deployment</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-button__wrapper">
+        <a
+          class="button"
+          href="https://github.com/RobAtD/myFlix-Angular"
+          target="_blank"
+          >GitHub Client Repository</a
+        >
+        <a
+          class="button"
+          href="https://github.com/RobAtD/movie_api"
+          target="_blank"
+          >GitHub Backend Repository</a
+        >
+        <a
+          class="button"
+          href="https://robatd.github.io/myFlix-Angular"
+          target="_blank"
+          >Live Website</a
+        >
+      </div>
+    </main>
+    <!-- Footer with links to social media profiles -->
+    <footer class="page-footer">
+      <p>Follow me on</p>
+      <div class="social-media">
+          <a href="https://github.com/RobAtD" target="_blank"><img src="./img/github-icon.svg" alt="GitHub" /></a>
+          <a href="https://www.linkedin.com/in/robert-ditler-8585b31b7/" target="_blank"><img src="./img/linkedin-icon.svg" alt="LinkedIn" /></a>
+      </div>
+  </footer>
+  </body>
+</html>
